@@ -1,0 +1,19 @@
+﻿@using Sheico.Controllers
+
+<div class="row hidden-sm hidden-xs" style="margin-top:20px; height:40px; background-image: linear-gradient( 0deg, white , transparent); border: 1px solid #eeeeee; -webkit-border-radius: 20px; -moz-border-radius: 20px; border-radius: 20px;">
+    <span class="textzone03_title" style="position:relative; left: 20px; top:8px">@ViewBag.BreadcrumbTitle</span>
+    
+    <ul class="breadcrumb pull-right">
+    @foreach (var item in ViewBag.BreadcrumbItem as List<BreadcrumbItem>)
+    {
+        if (item.isActive)
+        {
+            <li class="active">@item.LinkText</li>
+        }
+        else
+        {
+            <li><a href="@item.LinkUrl">@item.LinkText</a></li>
+        }
+    }
+    </ul>
+</div>

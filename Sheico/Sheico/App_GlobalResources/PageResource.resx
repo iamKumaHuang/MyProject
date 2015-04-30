@@ -1,0 +1,223 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="BtLogin" xml:space="preserve">
+    <value>Log in</value>
+  </data>
+  <data name="CompanyAddress" xml:space="preserve">
+    <value>No. 27, Ln. 128 Xihe 1st Road, Wujie Township,Yilan County 26847, Taiwan, R.O.C.</value>
+  </data>
+  <data name="CompanyFax" xml:space="preserve">
+    <value>+886-3-965-8899</value>
+  </data>
+  <data name="CompanyMail" xml:space="preserve">
+    <value>info@sheico.com.tw</value>
+  </data>
+  <data name="CompanyTel" xml:space="preserve">
+    <value>+886-3-965-6699</value>
+  </data>
+  <data name="CompanyTitle" xml:space="preserve">
+    <value>SHEICO Group</value>
+  </data>
+  <data name="FooterContact" xml:space="preserve">
+    <value>Address: No. 27, Ln. 128 Xihe 1st Road, Wujie Township, Yilan County 26847, Taiwan, R.O.C　TEL.: +886-3-9656699　E-mail: info@sheico.com.tw</value>
+  </data>
+  <data name="FooterCopyright" xml:space="preserve">
+    <value>Copyright © 2012 Sheico Group. All rights reserved.</value>
+  </data>
+  <data name="HomeAd1" xml:space="preserve">
+    <value>&lt;p&gt;Sheico is the global leading supplier in water sports apparel.&lt;/p&gt;
+&lt;p&gt;We have over 40 years of experience in neoprene technology and garment manufacturing. With the collaboration of our technical experts and respected customers, Sheico sets the standard for wetsuit innovation. In the past decade, Sheico has also been engaged in the development and production of spandex yarn, performance fabric, active wear, and personal flotation devices.&lt;/p&gt;</value>
+  </data>
+  <data name="LbAddress" xml:space="preserve">
+    <value>Address</value>
+  </data>
+  <data name="LbEmail" xml:space="preserve">
+    <value>e-mail</value>
+  </data>
+  <data name="LbFax" xml:space="preserve">
+    <value>FAX.</value>
+  </data>
+  <data name="LbForgot" xml:space="preserve">
+    <value>Forgot your password?</value>
+  </data>
+  <data name="LbRegister" xml:space="preserve">
+    <value>Register as a new user</value>
+  </data>
+  <data name="LbRemember" xml:space="preserve">
+    <value>Remember me?</value>
+  </data>
+  <data name="LbTel" xml:space="preserve">
+    <value>TEL.</value>
+  </data>
+  <data name="LinkLanguage" xml:space="preserve">
+    <value>ENGLISH</value>
+  </data>
+  <data name="MenuAbout" xml:space="preserve">
+    <value>ABOUT</value>
+  </data>
+  <data name="MenuCommunity" xml:space="preserve">
+    <value>COMMUNITY</value>
+  </data>
+  <data name="MenuContact" xml:space="preserve">
+    <value>CONTACT</value>
+  </data>
+  <data name="MenuCsr" xml:space="preserve">
+    <value>CSR</value>
+  </data>
+  <data name="MenuHome" xml:space="preserve">
+    <value>HOME</value>
+  </data>
+  <data name="MenuLogin" xml:space="preserve">
+    <value>LOG IN</value>
+  </data>
+  <data name="MenuLogout" xml:space="preserve">
+    <value>LOG OFF</value>
+  </data>
+  <data name="MenuPress" xml:space="preserve">
+    <value>PRESS</value>
+  </data>
+  <data name="MenuProduct" xml:space="preserve">
+    <value>PRODUCTS</value>
+  </data>
+  <data name="MenuRegister" xml:space="preserve">
+    <value>REGISTER</value>
+  </data>
+  <data name="MenuSearch" xml:space="preserve">
+    <value>Keyword</value>
+  </data>
+  <data name="MetaAuthor" xml:space="preserve">
+    <value>SHEICO Group</value>
+  </data>
+  <data name="MetaCopyright" xml:space="preserve">
+    <value>SHEICO Group</value>
+  </data>
+  <data name="MetaDescription" xml:space="preserve">
+    <value>SHEICO, Spandex Yarn, Spanflex Fabric, Neoprene Sheets, Wetsuits, Dry Suits, Rash Guards, Personal Flotation Devices, Boots, Gloves, Buoyancy Compensator &amp; Commercial / Military Products</value>
+  </data>
+  <data name="MetaKeyword" xml:space="preserve">
+    <value>SHEICO, Spandex Yarn, Spanflex Fabric, Neoprene Sheets, Wetsuits, Dry Suits, Rash Guards, Personal Flotation Devices, Boots, Gloves, Buoyancy Compensator &amp; Commercial / Military Products</value>
+  </data>
+  <data name="PageTitle" xml:space="preserve">
+    <value>SHEICO Group</value>
+  </data>
+  <data name="TitleLogin" xml:space="preserve">
+    <value>Use a local account to log in.</value>
+  </data>
+</root>

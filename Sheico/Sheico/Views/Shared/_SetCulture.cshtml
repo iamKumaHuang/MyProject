@@ -1,0 +1,48 @@
+﻿<li class="dropdown">
+    <a href="#" data-toggle="dropdown" class="dropdown-toggle">@(Session["CultureName"].ToString())<b class="caret"></b></a>
+    <ul class="dropdown-menu">
+@{
+    string currentController = ViewContext.Controller.ValueProvider.GetValue("controller").RawValue.ToString();
+    string cultrue = Session["Culture"] == null ? "zh-TW" : Session["Culture"].ToString();
+
+    switch (cultrue)
+    {
+        case "en-US":
+            <li class="sub"><a href="/@currentController/SetCulture/zh-TW">繁體中文</a></li>
+            break;
+        default:
+            <li class="sub"><a href="/@currentController/SetCulture/en-US">ENGLISH</a></li>
+            break;
+    }
+}
+    </ul>
+</li>
+
+@*@{
+    string currentController = ViewContext.Controller.ValueProvider.GetValue("controller").RawValue.ToString();
+    string cultrue = Session["Culture"] == null ? "zh-TW" : Session["Culture"].ToString();
+
+    switch (cultrue)
+    {
+        case "en-US":
+            <a href="/@currentController/SetCulture/zh-TW">[ 繁體中文 ]</a>
+            <a href="/@currentController/SetCulture/zh-CN">[ 简体中文 ]</a>
+            <a href="/@currentController/SetCulture/ja-JP">[ 日本語 ]</a>
+            break;
+        case "zh-CN":
+            <a href="/@currentController/SetCulture/en-US">[ ENGLISH ]</a>
+            <a href="/@currentController/SetCulture/zh-TW">[ 繁體中文 ]</a>
+            <a href="/@currentController/SetCulture/ja-JP">[ 日本語 ]</a>
+            break;
+        case "ja-JP":
+            <a href="/@currentController/SetCulture/en-US">[ ENGLISH ]</a>
+            <a href="/@currentController/SetCulture/zh-TW">[ 繁體中文 ]</a>
+            <a href="/@currentController/SetCulture/zh-CN">[ 简体中文 ]</a>
+            break;
+        default:
+            <a href="/@currentController/SetCulture/en-US">[ ENGLISH ]</a>
+            <a href="/@currentController/SetCulture/zh-CN">[ 简体中文 ]</a>
+            <a href="/@currentController/SetCulture/ja-JP">[ 日本語 ]</a>
+            break;
+    }
+}*@

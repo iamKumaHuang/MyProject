@@ -1,0 +1,110 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@Resources.PageResource.PageTitle</title>
+    <meta name="keywords" content="@Resources.PageResource.MetaKeyword">
+    <meta name="description" content="@ViewBag.Title,@Resources.PageResource.MetaDescription">
+    <meta name="author" content="@Resources.PageResource.MetaAuthor" />
+    <meta name="copyright" content="@Resources.PageResource.MetaCopyright" />
+    <meta name="robots" content="all" />
+    <meta name="revisit-after" content="1 days" />
+
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <style>
+        @@media (min-width: 1200px) {
+            .container {
+                max-width: 920px;
+            }
+        }
+        .navbar-default .navbar-nav > li .sub > a {
+          color: #333333;
+        }
+
+        .navbar-default .navbar-nav > li .sub > a:hover,
+        .navbar-default .navbar-nav > li .sub > a:focus {
+          color: #333333;
+          background-color: #e7e7e7;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="navbar navbar-default">
+        <div class="container visible-lg">
+            <div class="nav navbar-nav">
+                <a href="@Url.Action("Index", "Home", null)"><img src="~/Images/sheico_logo.png" alt="@Resources.PageResource.PageTitle" title="@Resources.PageResource.PageTitle"></a>
+            </div>
+            <ul class="nav navbar-nav navbar-right leftmenu12">
+                @Html.Partial("_LoginPartial")
+                @Html.Partial("_SetCulture")
+            </ul>
+        </div>
+        <div class="container" style="background-color: #0073bf; color: #ffffff">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <div class="hidden-lg" style="padding-left:15px;">
+                    <a href="@Url.Action("Index", "Home", null)"><img src="~/Images/En/sheico_logo.png" width="380" height="60" 　alt="@Resources.PageResource.PageTitle" title="@Resources.PageResource.PageTitle"></a>
+                </div>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink(Resources.PageResource.MenuHome, "Index", "Home")</li>
+                    <li>@Html.ActionLink(Resources.PageResource.MenuAbout, "About", "Home")</li>
+                    <li>@Html.ActionLink(Resources.PageResource.MenuProduct, "Index", "Home")</li>
+                    <li>@Html.ActionLink(Resources.PageResource.MenuCsr, "Index", "Home")</li>
+                    <li>@Html.ActionLink(Resources.PageResource.MenuPress, "Index", "Home")</li>
+                    <li>@Html.ActionLink(Resources.PageResource.MenuCommunity, "Index", "Home")</li>
+                    <li>@Html.ActionLink(Resources.PageResource.MenuContact, "Contact", "Home")</li>                    
+                </ul>
+
+                <form role="search" class="navbar-form navbar-right">
+                    <div class="form-group">
+                        <input type="text" placeholder="@Resources.PageResource.MenuSearch" class="form-control">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer class="visible-lg visible-md" id="footer_box">
+            <table width="840" border="0" cellpadding="0" cellspacing="0" style="margin-top:0px">
+                <tbody>
+                    <tr>
+                        <td height="20" align="center" valign="top">
+                            @Html.ActionLink(Resources.PageResource.MenuHome, "Index", "Home") |
+                            @Html.ActionLink(Resources.PageResource.MenuAbout, "About", "Home") |
+                            @Html.ActionLink(Resources.PageResource.MenuProduct, "Index", "Home") |
+                            @Html.ActionLink(Resources.PageResource.MenuCsr, "Index", "Home") |
+                            @Html.ActionLink(Resources.PageResource.MenuPress, "Index", "Home") |
+                            @Html.ActionLink(Resources.PageResource.MenuCommunity, "Index", "Home") |
+                            @Html.ActionLink(Resources.PageResource.MenuContact, "Contact", "Home") |
+                            <a href="career.php">人才招募</a> |
+                            <a href="#">網站地圖</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center" valign="top">@Resources.PageResource.FooterCopyright</td>
+                    </tr>
+                    <tr>
+                        <td align="center" valign="top">@Resources.PageResource.FooterContact</td>
+                    </tr>
+                </tbody>
+            </table>
+        </footer>
+    </div>
+    
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

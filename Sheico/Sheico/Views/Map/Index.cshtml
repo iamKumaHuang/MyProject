@@ -1,0 +1,32 @@
+﻿@{
+    Layout = "~/Views/Shared/_EmptyLayout.cshtml";
+}
+
+<div id="map"></div>
+
+@section Scripts {
+    <script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+    <script src="~/Scripts/jQuery-tinyMap-master/jquery.tinyMap.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#map").css("height", window.innerHeight);
+            $("#map").css("width", window.innerWidth);
+        });
+        $('#map').tinyMap({
+            center: { 'lat': '24.704970', 'lng': '121.764155' },
+            scrollwheel: true,//是否支援滑鼠滾輪縮放
+            mapTypeControl: false,//是否可切換地圖類型
+            zoomControl: true,//是否顯示縮放控制器
+            streetViewControl: true,//是否顯示街景控制器
+            draggable: true,//是否提供拖曳功能
+            disableDoubleClickZoom: true,//是否停用左鍵雙擊放大地圖的功能
+            zoom: 17,
+            marker: [{
+                addr: ['24.704970', '121.764155'],
+                text: '@Resources.PageResource.CompanyTitle',
+                title: '@Resources.PageResource.CompanyAddress'
+                }]
+        });
+
+    </script>
+}

@@ -1,0 +1,34 @@
+﻿@using Microsoft.AspNet.Identity
+@if (Request.IsAuthenticated)
+{
+    using (Html.BeginForm("LogOff", "Account", FormMethod.Post, new { id = "logoutForm", @class = "navbar-right" }))
+    {
+    @Html.AntiForgeryToken()
+
+    <ul class="nav navbar-nav navbar-right">
+        <li>
+            @Html.ActionLink("Hello," + User.Identity.GetUserName() , "Index", "Manage", routeValues: null, htmlAttributes: new { title = "Manage" })
+        </li>
+        <li><a href="javascript:document.getElementById('logoutForm').submit()">@Resources.PageResource.MenuLogout</a></li>
+    </ul>
+
+
+    <li class="dropdown">
+        <a href="#" data-toggle="dropdown" class="dropdown-toggle">"Hello," + User.Identity.GetUserName()<b class="caret"></b></a>
+        <ul class="dropdown-menu">
+            <li class="sub">
+                @Html.ActionLink("個人基本資料", "Index", "Manage", routeValues: null, htmlAttributes: new { title = "Manage" })
+            </li>
+            <li class="sub">
+                <a href="javascript:document.getElementById('logoutForm').submit()">@Resources.PageResource.MenuLogout</a>
+            </li>
+        </ul>
+    </li>
+    
+    }
+}
+else
+{
+    @*<li>@Html.ActionLink(Resources.PageResource.MenuRegister, "Register", "Account", routeValues: null, htmlAttributes: new { id = "registerLink" })</li>*@
+    <li>@Html.ActionLink(Resources.PageResource.MenuLogin, "Login", "Account", routeValues: null, htmlAttributes: new { id = "loginLink" })</li>
+}
